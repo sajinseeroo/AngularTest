@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  title = 'AngularDemo';
+  name :any='anu';
+  disabled=true;
+  show='green';
+  array=['anu','ram','tony']
+  getVal(val){
+console.warn(val);
+
+  }
+  enableBox(){
+    this.disabled=false
+    
+  }
+  list :any={
+name :'litta',
+age:23
+  }
+  parentFunction(data){
+    console.warn(data);
+    
+  }
 }
